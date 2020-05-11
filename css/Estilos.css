@@ -1,16 +1,22 @@
 body{
-    background-image: url("https://conteudo.imguol.com.br/c/entretenimento/e2/2020/04/13/pocoyo-virou-embaixador-do-isolamento-social-no-brasil-1586794881482_v2_1080x608.jpg");
-    background-size: auto 100vh;
-    font-family: fantasy;
+    background-image: url("https://img.ibxk.com.br/2017/08/01/01214602420016.jpg?w=1120&h=420&mode=crop&scale=both");
+    background-size: auto 100vh; 
+    font-family:'Raleway', sans-serif;
   }
   
+
+  div{
+
+  }
   .menu{
     background-color: none;
+    height: 50px;
+    width: 500px;
   }
   
   .menu ul {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
   }
   .menu li{
     list-style: none;
@@ -18,16 +24,28 @@ body{
   
   a{
     text-decoration: none;
+    text-align: end;
     font-size: 30px;
-    color: blue;
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+    color: white;
   }
   a:hover{
     text-decoration:underline;
   }
   .site-title, .site-subtitle{
     text-align: center;
-    font-size: 150px;
-    text-shadow: 9px 10px black;
-    color: blue;
+    font-size: 100px;
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+    color: white;
+  }
+  h1{
+    margin: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    height: 400px;
+    width: 500px;
+    box-shadow:10px 10px black;
+    background-image: url(https://i.pinimg.com/originals/d9/82/70/d98270e2ade683be633f16719f5f1bc5.gif);
+    background-size: auto 60vh;
   }
   
