@@ -1,11 +1,11 @@
 body{
-    background-image: url("https://neilpatel.com/wp-content/uploads/2017/08/colors.jpg%22");
-    background-size: 120vw 120vh;
-    font-family: Arial;
+    background-image: url("https://conteudo.imguol.com.br/c/entretenimento/e2/2020/04/13/pocoyo-virou-embaixador-do-isolamento-social-no-brasil-1586794881482_v2_1080x608.jpg");
+    background-size: auto 100vh;
+    font-family: fantasy;
   }
   
   .menu{
-    background-color:white;
+    background-color: none;
   }
   
   .menu ul {
@@ -18,12 +18,16 @@ body{
   
   a{
     text-decoration: none;
+    font-size: 30px;
+    color: blue;
   }
   a:hover{
     text-decoration:underline;
   }
   .site-title, .site-subtitle{
     text-align: center;
-    color: whitesmoke;
+    font-size: 150px;
+    text-shadow: 9px 10px black;
+    color: blue;
   }
   
