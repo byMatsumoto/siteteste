@@ -44,6 +44,7 @@ body{
     background-color: rgba(56, 45, 153, 0.219);
     width: auto;
     position:fixed;
+    border-radius: 100px;
     top: 0;}
 
   .menu ul {
