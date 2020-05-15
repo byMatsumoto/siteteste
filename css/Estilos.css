@@ -1,36 +1,50 @@
 *{
-  margin: 5;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body{
-    background-image: url("https://img.ibxk.com.br/2017/08/01/01214602420016.jpg?w=1120&h=420&mode=crop&scale=both");
-    background-size: auto 100vh; 
-    font-family:arial;
-    font-size: 20px;
-
+    background-image: url("https://scontent.fgru5-1.fna.fbcdn.net/v/t1.0-9/p960x960/97565234_2493711007556492_5752116873374203904_o.jpg?_nc_cat=102&_nc_sid=730e14&_nc_ohc=jtLYHFCPXgMAX-szlQo&_nc_ht=scontent.fgru5-1.fna&_nc_tp=6&oh=277dc01ca7d08ee48402c7039da82bd2&oe=5EE27DF9");
+    background-size: auto 100vh;
+    height: 100vh;
+    font-size: 10px;
+    font-family: 'Indie Flower', cursive;
   }
   /*se a tela tiver pelo menos 400px */
+  @media(min-width:100px){
+    a{
+      font-size: 16px;
+    }
+  }
   @media(min-width: 400px){
     body{
-      font-size: 50px ;
+      font-size: 14px ;
+    }
+    a{
+      font-size: 18px;
+    }
+  }
+  @media(min-width: 600px){
+    body{
+      font-size: 18px ;
+    }
+    a{
+      font-size: 22px;
     }
   }
   header{
-    height:  100vh;
+    height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
     align-items: center;
-  }
-
-  div{
-
+    flex-wrap: wrap;
   }
   .menu{
-    background-color: none;
+    background-color: rgba(56, 45, 153, 0.219);
+    width: auto;
     position:fixed;
-    top: 0;
-  }
+    top: 0;}
 
   .menu ul {
     display: flex;
@@ -46,37 +60,107 @@ body{
   a{
     text-decoration: none;
     text-align: end;
-    font-size: 30px;
     text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
     color: white;
+    font-family: 'Balsamiq Sans', cursive;
   }
   a:hover{
-    text-decoration:underline;
+    text-decoration:none;
+    font-weight: bold;
   }
-  .site-title, .site-subtitle{
+  .site-title{
+    color: whitesmoke;
+    font-family: sans-serif;
+    line-height: 1em;
+    margin-bottom: 20px;
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+
+
+
+    /*
     text-align: center;
     font-size: 100px;
     text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
-    color: white;
+    color: white;*/
+
+
   }
-  h1{
-    margin: 20px;
-    border: 2px solid black;
-    padding: 10px;
-    height: 400px;
-    width: 500px;
-    box-shadow:10px 10px black;
-    background-image: url(https://i.pinimg.com/originals/d9/82/70/d98270e2ade683be633f16719f5f1bc5.gif);
-    background-size: auto 60vh;
+  .site-subtitle,h2{
+    color:rgba(245, 245, 245, 0.61) ;
+font-style: italic;
+font-weight: lighter;
+text-align: center;
+font-size: 2em;
+line-height: 1em;
+font-family: 'Open Sans Condensed', sans-serif;
+text-shadow: 1px 1px whitesmoke;
+
   }
-  h2{
+  h3{
+    text-align:center;
+    padding: 1em;
     font-size: 50px;
     color: white;
     text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
 
   }
-  .img-portfolio{
-    width:  180px;
-    height:  180px;
+  .Portfólio{
+    font-size: 1.5em;
+    color: whitesmoke;
+    padding: 2em;
+    height: 100vh;
   }
+
+  .Portfólio h3{
+    font-family: Arial;
+
+  }
+  .img-portfolio{
+    width:  200px;
+    height:  200px;
+    object-fit: cover;
+    border-radius: 100px;
+  }
+  .img-portfolio1{
+    width:  200px;
+    height:  200px;
+  }
+
+  .Portfólio .grid{
+    display: grid;
+    gap: 2em;
+    height: 100vh;
   
+  }
+  @media (min-width: 735px) {
+
+    .Portfólio .grid{
+      grid-template-columns: 350px 350px ;
+    }
+  @media (min-width: 1120px) {
+
+    .Portfólio .grid{
+      grid-template-columns: 350px 350px 350px ;
+    }
+  }
+  @media (min-width: 1440px) {
+    .Portfólio .grid{
+    grid-template-columns: 350px 350px 350px 350px;
+    justify-content: center;
+    align-items: center;
+    height: calc(85vh - 2em - 48px - 1em);
+    }
+  }
+ 
+  .Portfólio figure{
+    text-align: center;
+  }
+  /*
+  .figcaption{
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+
+  }*/}
