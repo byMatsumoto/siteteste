@@ -13,6 +13,8 @@ body{    background-color: #1d1b33;
   /*se a tela tiver pelo menos 400px */
   @media(min-width: 400px){
     body{
+      background-attachment: fixed;
+      background-size: cover;
       font-size: 14px ;
     }
   }
@@ -276,18 +278,27 @@ text-shadow: 1px 1px whitesmoke;
       max-width: 1400px;
     }
   }
-   .Sobre img{
-    width:  200px;
-    height:  200px;
+  @media(min-width: px)
+  {
+    .Sobre .avatar{
+      width: 30%;
+      margin-left: 1em;
+    }
   }
   .Sobre .avatar{
+    width: 30%;
     float: right;
+    margin-left: 1em;
+  }
+  .Sobre img{
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
   }
   .Sobre p{
     color:whitesmoke;
     text-indent: 2em;
     margin-bottom: 1em;
   }
+
   .Portfólio figure{
     text-align: center;
   }
